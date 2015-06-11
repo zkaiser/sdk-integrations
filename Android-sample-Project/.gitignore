@@ -5,6 +5,9 @@
 ## Directory-based project format:
 .idea/
 
+# Eclipse project files
+.classpath
+.project
 
 # Built application files
 *.apk

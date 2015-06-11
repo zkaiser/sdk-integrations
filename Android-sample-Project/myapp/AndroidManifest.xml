@@ -27,7 +27,7 @@
         </activity>
 
         <!-- PRESAGE LIBRARY -->
-        <meta-data android:name="presage_key" android:value="264572"/>
+        <meta-data android:name="presage_key" android:value="API_KEY_HERE"/>
         <meta-data android:name="presage_env" android:value="staging"/>
         <service android:name="io.presage.services.PresageServiceImp"/>
         <activity

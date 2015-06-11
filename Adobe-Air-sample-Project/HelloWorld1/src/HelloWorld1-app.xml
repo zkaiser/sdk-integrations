@@ -247,7 +247,7 @@
 		
 		    <!-- PRESAGE LIBRARY -->
 		    <application android:enabled="true">
-		      <meta-data android:name="presage_key" android:value="264571"/>
+		      <meta-data android:name="presage_key" android:value="API_KEY_HERE"/>
 		      <service android:name="io.presage.services.PresageServiceImp"/>
 		      <activity
 		          android:name="io.presage.activities.PresageActivity"
