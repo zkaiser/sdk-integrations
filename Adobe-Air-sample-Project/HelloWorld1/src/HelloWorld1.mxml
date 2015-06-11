@@ -1,0 +1,43 @@
+<s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+							xmlns:s="library://ns.adobe.com/flex/spark" firstView="views.HelloWorld1HomeView" applicationDPI="160">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import io.presage.extensions.Presage;
+			import io.presage.extensions.events.PresageEvent;
+			
+			private static function handleAdEvent(e:PresageEvent):void
+			{
+				switch(e.type)
+				{
+					case PresageEvent.AD_NOT_FOUND:
+					{
+						break;
+					}
+						
+					case PresageEvent.AD_FOUND:
+					{
+						
+						break;
+					}
+						
+					case PresageEvent.AD_CLOSED:
+					{
+						Presage.ShowInterstitial();
+						break;
+					}
+				}    
+			}
+			
+			Presage.StartPresage();
+			Presage.getInstance().addEventListener(PresageEvent.AD_NOT_FOUND, handleAdEvent);
+			Presage.getInstance().addEventListener(PresageEvent.AD_FOUND, handleAdEvent);
+			Presage.getInstance().addEventListener(PresageEvent.AD_CLOSED, handleAdEvent);
+			Presage.ShowInterstitial();
+		]]>
+	</fx:Script>
+	
+</s:ViewNavigatorApplication>
