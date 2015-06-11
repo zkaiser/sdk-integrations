@@ -1,0 +1,8 @@
+# generated files
+bin-debug
+
+# Other files and folders
+.settings/
+.flexProperties
+.actionScriptProperties
+.project
